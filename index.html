@@ -16,22 +16,35 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
         <h1>Calculate a weight of an object on a planet</h1>
-
-        <input type="text" id="mass" placeholder="Mass in Kilogram" />
-        <select>
-            <option value='none'>--select planet-- </option>
-        </select>
-        <button>Calculate weight</button>
-
+        <div class="collect-info">
+          <input type="number" class="input" id="mass" placeholder="Mass in Kilogram" />
+          <select class="select" id="select" placeholder="--select--">
+            <option value='none'  id="option">--select planet-- </option>
+              <option value='mercury'>Mercury</option>
+              <option value='mercury'>Mercury</option>
+              <option value='mercury'>Mercury</option>
+              <option value='mercury'>Mercury</option>
+              <option value='mercury'>Mercury</option>
+              <option value='mercury'>Mercury</option>
+              <option value='mercury'>Mercury</option>
+              <option value='mercury'>Mercury</option>
+          </select>
+          <button class="btn">Calculate weight</button>
+        </div>
     </header>
     <main>
         <div class="flex-container">
             <div class="flex-item image">
                 <img src='./assests/images/earth.png' class="planet-image" />
             </div>
-            <div class="flex-item description"></div>
+            <div class="flex-item description">
+              <p>The weight of on a object on Earth</p>
+              <div class="result">
+                <p>80.00N</p>
+              </div>
+            </div>
 
         </div>
     </main>
